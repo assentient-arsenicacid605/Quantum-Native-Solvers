@@ -18,7 +18,7 @@ The purpose of this repository is to monitor computational techniques, over time
 Quantum‑Native Simulation Techniques 
 ├─ I. Lattice‑kinetic/ Automata family
 │   ├─ A. Quantum Lattice Boltzmann (QLBM)
-│   │   ├─ A1. “QW‑equivalent” formulations (QLBM ≈ quantum walk)
+│   │   ├─ A1. “Quantum-Walk‑equivalent” formulations (QLBM ≈ quantum walk)
 │   │   ├─ A2. Carleman‑linearized LB (LB–Carleman, fault‑tolerant oriented)
 │   │   ├─ A3. Multi‑circuit QLBM for noisy devices
 │   │   └─ A4. Early hardware demos (advection–diffusion on QPU)
