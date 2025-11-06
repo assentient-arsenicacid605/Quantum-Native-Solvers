@@ -18,7 +18,7 @@ Interestingly, some models such as the [Landau-Lifshitz-Gilbert (LLG) equation](
 
 ---
 
-## Classification Tree for Quantum-Native Simulation 
+## Classification Tree for Quantum-Native Simulation/ Solvers 
 
 ```
 Quantum‑Native Simulation Techniques 
@@ -218,7 +218,7 @@ Quantum‑Native Simulation Techniques
 
 ---
 
-## **Quantum‑Native Simulation Techniques - Ordered by Hardware‑Readiness**  
+## **Quantum‑Native Solver Techniques - Ordered by Hardware‑Readiness**  
 
 
 ## I. NISQ‑ready (shallow‑depth, few‑qubit) techniques  
@@ -318,7 +318,7 @@ Heterogeneous Quantum Computer (Architected for Fault-Tolerant Compatibility)
 
 ---
 
-## Decision Tree to Determine Which Quantum-Native Simulation Techniques Could Run on an Proposed Fault-Tolerant Heterogenous Quantum Computer 
+## Decision Tree to Determine Which Quantum-Native Solver Techniques Could Run on an Proposed Fault-Tolerant Heterogenous Quantum Computer 
 
 ```
 Fault‑tolerant heterogeneous/hybrid quantum system
