@@ -489,5 +489,5 @@ Fault‑tolerant heterogeneous/hybrid quantum system
 57. Gottesman, D., 1998, ‘The Heisenberg representation of quantum computers’, *arXiv* quant‑ph/9807006 (basis for LCU/LCU‑type constructions).  
 58. Babbush, R., et al., 2018, ‘Low‑depth quantum simulation of materials’, *Phys. Rev. X* 8, 011044, https://doi.org/10.1103/PhysRevX.8.011044 (Hamiltonian‑simulation of electronic structure).  
 59. Nguyen, N. H., et al., 2020, ‘Quantum simulation of Dirac equation with trapped ions’, *Nat. Commun.* 11, 3720.  
-60. Montanaro, A., 2021, ‘Quantum algorithms: an overview’, *npj Quantum Inf.* 7, 55, https://doi.org/10.1038/s41534‑021‑00379‑1 (general review).  
+60. Montanaro, A., 2021, ‘Quantum algorithms: an overview’, *npj Quantum Inf.* 7, 55, https://doi.org/10.1038/s41534‑021‑00379‑1.  
 
