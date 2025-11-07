@@ -443,7 +443,7 @@ Fault‑tolerant heterogeneous/hybrid quantum system
 
 ---
 
-## Estimated Metrics for Qubit Count per Example Technique 
+## Estimated Metrics for Qubit Count Per Example Technique 
 
 * **d = 7 → ~98 physical/logical** 
 * **d = 13 → ~338 physical/logical** 
