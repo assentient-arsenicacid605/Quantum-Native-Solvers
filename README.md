@@ -443,6 +443,56 @@ Fault‑tolerant heterogeneous/hybrid quantum system
 
 ---
 
+## Estimated Metrics for Qubit Count per Example Technique 
+
+* **d = 7 → ~98 physical/logical** 
+* **d = 13 → ~338 physical/logical** 
+* *Occupancy mapping*: for 2D D2Q5, **5M² qubits** for an M×M lattice (one per discrete velocity population) 
+
+## A) Tier I - NISQ‑ready (physical qubits, shallow circuits)
+
+**Description:** Estimated qubit counts for methods that can be run on current NISQ hardware without error correction.
+
+| Method | Qubit estimate (today’s NISQ) | How the count was derived | Representative instance |
+|---|---|---|---|
+| Quantum walks | 6–14 qubits typical; formula ≈ ⌈log₂ N⌉ + 2 | Position register + coin + one small ancilla | N = 1,024 nodes → 10 (pos) + 1 (coin) + 1 (anc) = **12** |
+| QLBM demos – occupancy encoding | 5 M² qubits (scales with lattice size) | D2Q5 mapping: one qubit per discrete‑velocity population | M = 8 → 5 · 64 = **320** |
+| QLBM demos – amplitude‑encoded | ~10 qubits (≈9 data + 1 ancilla) | Amplitude/state‑encoding keeps width constant | Demonstrations use **9 + 1** qubits |
+| VQS/ QITE | 4–20 qubits | VQE chemistry demos: H₂ (4 q), LiH (12 q); QITE demos up to ~20 q | H₂ minimal basis (4 q), LiH frozen‑core (12 q) |
+| Tiny HHL demos | 4–8 qubits | Small 2×2–4×4 linear systems using QPE + ancillas | Early NMR/photonic/IBM‑style proofs of concept |
+| Basic amplitude estimation | 0–1 ancilla beyond problem registers | Low‑depth variants avoid large phase‑estimation registers | ML‑AE and IQAE use 0–1 extra qubit |
+| Minimal Lindblad simulators | 2–4 qubits for one system qubit + environment ancilla(s) | Stinespring/Kraus dilation for a single‑qubit channel | Amplitude damping on one qubit → **2** total; more channels add ancillas |
+
+
+## B) Tier II - Near‑term/Hybrid (logical qubits, modest error correction)
+
+**Description:** Logical‑qubit estimates for methods that employ modest error correction (e.g., surface‑code distance d = 7 or 13) and may involve multiple circuit stages.
+
+| Method | Algorithmic logical qubits (typical) | Physical qubits @ d = 7 | Physical qubits @ d = 13 | Reasoning |
+|---|---|---|---|---|
+| Multi‑circuit QLBM (amplitude‑encoded, with mid‑circuit measure/reset) | ~10–20 logical | ~980–1,960 | ~3,380–6,760 | Uses ~9 data + 1 ancilla kernel; multi‑circuit orchestration reuses the small kernel |
+| Linear‑differential‑equation (LDE) oracles in a QLSS/QSVT pipeline | n + 3–10 (n = log₂ grid DOFs) → e.g. ~32–64 logical | ~3,100–6,300 | ~10,800–21,600 | QLSS uses n algorithmic qubits plus ancillas for block‑encoding and QSP |
+| Tiny Q‑FEM prototypes (hybrid FEM + VQLS) | ~8–24 logical | ~784–2,352 | ~2,704–8,112 | Near‑term VQLS FEM and hybrid CFD/FEM demos show few‑to‑few‑dozen‑qubit runs |
+| Prototype QMetropolis/ QMS | n + r + 2–5 → ~24–64 logical | ~2,400–6,300 | ~8,100–21,600 | System register n, r‑bit energy precision, plus small ancillas for accept–reject |
+| Quantum‑accelerated Monte Carlo (QAE‑based risk/option demos, shallow variants) | 10–40 logical | ~980–3,920 | ~3,380–13,520 | Demos typically use 5–10 qubits for distributions, a payoff register, and 0–1 ancilla |
+| Photonic co‑processor variants | Not qubit‑encoded (modes/photons) | N/A | N/A | Photonic sampling/counting uses modes/photons rather than qubits; surface‑code overhead not applicable |
+
+
+## C) Tier III - Fault‑tolerant eligible (full error correction)
+
+**Description:** Logical‑qubit counts for fully fault‑tolerant algorithms, together with physical‑qubit totals for surface‑code distances d = 7 and d = 13.
+
+| Method | Representative problem & logical qubits | Physical @ d = 7 | Physical @ d = 13 | Notes |
+|---|---|---|---|---|
+| Full‑scale HHL/ block‑encoding linear solver | Sparse N = 2²⁰ (n = 20) with QSVT/QLSS → ~30–60 logical (20 data + 1–3 QSP ancillas + small oracles) | ~2,900–5,900 | ~10,100–20,300 | Low‑ancilla block‑encoding/QSP; depth/T‑count dominate cost |
+| Qubitized Dirac/ Schrödinger Hamiltonians | 3D grid 256³ → n = 24; qubitization ancillas → ~26–36 logical | ~2,500–3,500 | ~8,800–12,200 | Qubitization uses ≤2 ancillas; grid‑based demos confirm n in the 20–30 range |
+| QSVT‑based PDE solvers | Mixed FEM/PDE with QSP precision → ~40–80 logical | ~3,900–7,800 | ~13,500–27,000 | QSVT angles/LCU ancillas add O(1–log L) |
+| Quantum‑enhanced AMR | AMR error‑estimator loops + QLSS core → ~32–64 logical | ~3,100–6,300 | ~10,800–21,600 | Quantum error‑estimators via block‑encoding; toy VQLS AMR evaluators use 2–5 qubits (without EC) |
+| Large‑scale tensor‑network simulation (QTN on QC) | QTN/MPS with bond dimension χ = 64 → ~6–12 logical (log₂χ + ancillas) | ~590–1,180 | ~2,030–4,060 | Width independent of system size; depth and sampling control accuracy |
+| Quantum‑accelerated Monte Carlo (finance, fault‑tolerant) | End‑to‑end estimates: ~4.7k–8k logical; T‑count ≈10⁸–10⁹ | ~4.6 × 10⁵–7.8 × 10⁵ | ~1.6 × 10⁶–2.7 × 10⁶ | QSP‑based payoff loading reduces logical width to ~4.7k; factories and clock rate dominate schedule |
+
+---
+
 ## References
 
 1.  Wang, B., Meng, Z., Zhao, Y. and Yang, Y. (2025) *Quantum lattice Boltzmann method for simulating nonlinear fluid dynamics*. \[Preprint]. arXiv:2502.16568. Available at: [https://arxiv.org/abs/2502.16568](https://arxiv.org/abs/2502.16568).
