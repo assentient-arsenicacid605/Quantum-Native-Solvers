@@ -67,7 +67,7 @@ Quantum‑Native Simulation Techniques
 │   ├─ O. Variational Schrödinger solvers
 │   │   ├─ O1. Real‑time VQS with hardware‑efficient ansätze for non‑relativistic dynamics
 │   │   └─ O2. Imaginary‑time VQS/ QITE for ground‑state Schrödinger problems
-│   └─ P. Thermo‑Field‑Double (TFD) & Finite‑Temperature Variational Methods  ← NEW
+│   └─ P. Thermo‑Field‑Double (TFD) & Finite‑Temperature Variational Methods
 │       ├─ P1. QAOA‑style alternating‑operator TFD preparation (intersystem entangler + H) 
 │       │       — finite‑temperature Gibbs states via depth‑p cooling schedules
 │       │       — early trapped‑ion and superconducting demonstrations
@@ -75,7 +75,7 @@ Quantum‑Native Simulation Techniques
 │       │       — SYK‑model implementations; scalable to interacting fermions
 │       ├─ P3. Variational Quantum Thermalizer (VQT), free‑energy minimization
 │       │       — entropy estimation via series/auxiliary models; high‑T guarantees
-│       ├─ P4. TFD‑QITE / imaginary‑time purification (unitary approximants to e^{-βH/2})
+│       ├─ P4. TFD‑QITE/ imaginary‑time purification (unitary approximants to e^{-βH/2})
 │       │       — purely unitary circuits with ancilla‑assisted updates
 │       ├─ P5. TFD‑VQS for dynamical correlators & spectroscopy 
 │       │       — finite‑T C(t), optical/UV‑vis spectra, non‑equilibrium quenches
@@ -95,10 +95,14 @@ Quantum‑Native Simulation Techniques
 │   │   ├─ S1. Product‑formula (Trotter‑Suzuki) for γ·p + m terms
 │   │   ├─ S2. LCU/ qubitization of relativistic kinetic operator
 │   │   └─ S3. Interaction‑picture and Dyson‑series methods for time‑dependent Dirac fields
-│   └─ T. Schrödinger‑Hamiltonian simulation
-│       ├─ T1. Finite‑difference/plane‑wave discretization + Trotter
-│       ├─ T2. LCU/ qubitization of kinetic + potential operators
-│       └─ T3. Interaction‑picture schemes for driven potentials
+│   ├─ T. Schrödinger‑Hamiltonian simulation
+│   │   ├─ T1. Finite‑difference/plane‑wave discretization + Trotter
+│   │   ├─ T2. LCU/ qubitization of kinetic + potential operators
+│   │   └─ T3. Interaction‑picture schemes for driven potentials
+│   └─ U. Finite‑Temperature Correlators via TFD (Kubo/Schwinger–Keldysh/OTOCs) [xref: III‑P]
+│       ├─ U1. Linear‑response & spectral functions at finite‑T via |TFD(β)⟩ (Kubo framework)
+│       ├─ U2. Out‑of‑time‑order correlators (OTOCs) from doubled‑register/TFD circuits
+│       └─ U3. Schwinger–Keldysh contour ↔ TFD mapping for real‑time finite‑T observables
 │
 ├─ V. Stochastic & Monte Carlo family
 │   ├─ O. Quantum Monte Carlo (classically executed, physics‑native)
@@ -125,7 +129,8 @@ Quantum‑Native Simulation Techniques
 │   ├─ R. Lindblad simulators on quantum hardware
 │   │   ├─ R1. LCU/ Stinespring‑dilation & qubitization‑style algorithms
 │   │   ├─ R2. Randomized product‑formula & sampling compilers for GKSL
-│   │   └─ R3. Quantum‑trajectory simulators with additive O(T + log 1/ε) scaling (class‑dependent)
+│   │   ├─ R3. Quantum‑trajectory simulators with additive O(T + log 1/ε) scaling (class‑dependent)
+│   │   └─ R4. Liouville‑space / TFD vectorization of GKSL (Choi/Jamiołkowski; |ρ⟩⟩ mapping) [xref: III‑P4]
 │   ├─ S. Classical‑HPC Lindblad solvers with quantum trajectories (large‑N pure‑state sampling)
 │   └─ T. Lindblad → LL/LLG mappings for magnetization dynamics
 │       ├─ T1. LL from Lindbladian dynamics (scale‑separated local mean‑field regimes)
@@ -238,6 +243,7 @@ Quantum‑Native Simulation Techniques
         ├─ J2. Quantum‑accelerated multigrid preconditioners for the Laplacian‑plus‑potential operator
         └─ J3. Adaptive mesh refinement driven by quantum‑measured error estimates
 ```
+
 
 ---
 
