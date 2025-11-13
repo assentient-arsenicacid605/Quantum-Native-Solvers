@@ -261,7 +261,7 @@ These approaches are still limited on today’s noisy devices but become practic
 | **D. LCU/ qubitization for modest problem sizes** | 1. LCU/ qubitization of the Dirac operator on a 2 × 2 lattice <br> 2. VQLS for stationary Schrödinger on ≤ 8‑dimensional basis |
 | **E. Hamiltonian simulation (intermediate depth)** | 1. Trotter‑Suzuki product formula for Dirac kinetic + mass on a 3‑site lattice <br> 2. Finite‑difference Schrödinger Trotter on a 4‑site grid |
 | **F. Hybrid quantum‑accelerated Monte Carlo** | 1. Prototype Quantum Metropolis (single‑spin Ising) <br> 2. Hybrid QMC where the quantum computer supplies trial wavefunctions for AFQMC <br> 3. QAE‑based variance reduction inside Diffusion Monte Carlo <br> 4. Stochastic Dirac‑equation sampling on a few momentum modes |
-| **G. Quantum trajectories with modest scaling** | 1. Additive O(T + log 1/ε) trajectory algorithm for a 2‑qubit Lindbladian (research prototype) |
+| **G. Quantum trajectories with modest scaling** | 1. Additive O(T + log 1/ε) trajectory algorithm for a 2‑qubit Lindbladian (research prototype) | 
 | **H. Quantum Car‑Parrinello Molecular Dynamics (NISQ prototype)** | 1. QCPMD for a single‑atom, few‑electron system (small basis) |
 | **I. Other near‑term families** | 1. Quantum lattice‑gauge‑theory engines for 1‑D U(1) link models (few links) <br> 2. Quantum‑accelerated adaptive‑mesh‑refinement on a 2‑D grid (error estimate via IAE) <br> 3. Quantum‑enhanced real‑time TDDFT for a 2‑electron molecule (VQE‑derived Kohn‑Sham potential) <br> 4. Wigner‑function evolution on a 2‑point phase‑space (QFT‑based) <br> 5. Quantum‑accelerated uncertainty quantification for a 1‑D diffusion PDE (QAE sampling of input parameters) |
 
