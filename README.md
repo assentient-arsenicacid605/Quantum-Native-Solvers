@@ -115,9 +115,9 @@ Quantum‑Native Simulation Techniques
 │   │   ├─ P1. Quantum Amplitude Estimation (QAE; quadratic sampling speedups)
 │   │   ├─ P2. Quantum Metropolis sampling (thermal states without sign problem)
 │   │   └─ P3. Hybrid QMC w/ QC‑generated trials (e.g., QSCI → AFQMC)
-│   └─ Q. Quantum Trajectories (Monte Carlo wave function, stochastic Schrödinger)
-│       ├─ Q1. Quantum jumps/ MCWF unraveling of Lindblad
-│       └─ Q2. Adiabatic‑master‑equation trajectories; restricted‑MCWF diagnostics
+│   ├─ Q. Quantum Trajectories (Monte Carlo wave function, stochastic Schrödinger)
+│   │   ├─ Q1. Quantum jumps/ MCWF unraveling of Lindblad
+│   │   └─ Q2. Adiabatic‑master‑equation trajectories; restricted‑MCWF diagnostics
 │   ├─ R. Schrödinger‑QMC variants
 │   │   ├─ R1. Diffusion Monte Carlo with quantum‑enhanced trial‑wave‑function optimization
 │   │   └─ R2. Path‑Integral QMC for real‑time (Keldysh) Schrödinger evolution
@@ -130,7 +130,7 @@ Quantum‑Native Simulation Techniques
 │   │   ├─ R1. LCU/ Stinespring‑dilation & qubitization‑style algorithms
 │   │   ├─ R2. Randomized product‑formula & sampling compilers for GKSL
 │   │   ├─ R3. Quantum‑trajectory simulators with additive O(T + log 1/ε) scaling (class‑dependent)
-│   │   └─ R4. Liouville‑space / TFD vectorization of GKSL (Choi/Jamiołkowski; |ρ⟩⟩ mapping) [xref: III‑P4]
+│   │   └─ R4. Liouville‑space/ TFD vectorization of GKSL (Choi/Jamiołkowski; |ρ⟩⟩ mapping) 
 │   ├─ S. Classical‑HPC Lindblad solvers with quantum trajectories (large‑N pure‑state sampling)
 │   └─ T. Lindblad → LL/LLG mappings for magnetization dynamics
 │       ├─ T1. LL from Lindbladian dynamics (scale‑separated local mean‑field regimes)
