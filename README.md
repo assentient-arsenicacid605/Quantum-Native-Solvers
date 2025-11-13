@@ -316,7 +316,7 @@ These algorithms deliver asymptotic speed‑ups or polynomial‑time reductions 
 | **O. Quantum uncertainty quantification for large‑scale PDEs** | 1. Propagation of input‑parameter distributions through quantum‑accelerated forward models (QAE + QSVT) |
 | **P. Quantum‑accelerated scattering with many‑body final states** | 1. Dirac time‑dependent scattering with multi‑particle production (requires fault‑tolerant many‑body state preparation) |
 | **Q. Quantum‑enhanced Linear‑Landau‑Lifshitz‑Gilbert (LLG) mapping** | 1. Extraction of microscopic LLG coefficients from entanglement‑aware quantum simulations (requires full open‑system simulation + phase estimation) |
-| **R. Finite‑temperature & purified‑Gibbs/TFD preparation (fault‑tolerant)** | **1. QSVT/ block‑encoding routes to purified Gibbs/TFD** ($\exp(-\beta H/2)$) via polynomial transforms <br> **2. Coherent Gibbs samplers** (detailed‑balance Lindbladians mapped to a parent Hamiltonian with purified‑Gibbs zero‑mode; adiabatic path in ($\beta$)) <br> **3. Large‑scale finite‑T response & OTOCs on TFD/Schwinger–Keldysh contours (QPE‑grade)** |
+| **R. Finite‑temperature & purified‑Gibbs/TFD preparation (fault‑tolerant)** | **1. QSVT/ block‑encoding routes to purified Gibbs/TFD** ($\exp$($-\beta H/2$)) via polynomial transforms <br> **2. Coherent Gibbs samplers** (detailed‑balance Lindbladians mapped to a parent Hamiltonian with purified‑Gibbs zero‑mode; adiabatic path in ($\beta$)) <br> **3. Large‑scale finite‑T response & OTOCs on TFD/Schwinger–Keldysh contours (QPE‑grade)** |
 
 
 ---  
