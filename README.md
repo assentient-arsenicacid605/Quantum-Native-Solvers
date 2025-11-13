@@ -290,7 +290,7 @@ These approaches are still limited on today’s noisy devices but become practic
 | **G. Quantum trajectories with modest scaling** | 1. Additive O(T + log 1/ε) trajectory algorithm for a 2‑qubit Lindbladian (research prototype) | 
 | **H. Quantum Car‑Parrinello Molecular Dynamics (NISQ prototype)** | 1. QCPMD for a single‑atom, few‑electron system (small basis) |
 | **I. Other near‑term families** | 1. Quantum lattice‑gauge‑theory engines for 1‑D U(1) link models (few links) <br> 2. Quantum‑accelerated adaptive‑mesh‑refinement on a 2‑D grid (error estimate via IAE) <br> 3. Quantum‑enhanced real‑time TDDFT for a 2‑electron molecule (VQE‑derived Kohn‑Sham potential) <br> 4. Wigner‑function evolution on a 2‑point phase‑space (QFT‑based) <br> 5. Quantum‑accelerated uncertainty quantification for a 1‑D diffusion PDE (QAE sampling of input parameters) <br> **6. Finite‑temperature linear‑response & spectra using TFD initial states (Kubo/Green’s‑function pipelines)** |
-| **J. Variational TFD pipelines (hybrid)** | **1. \(H_{\mathrm{TFD}}\)‑VQE with entanglement forging (width‑reduction \(2N \rightarrow N\))** <br> **2. TFD‑QITE at moderate depth (β‑schedules; locality‑aware updates)** <br> **3. Small‑lattice finite‑T correlators & spectral densities from TFD** |
+| **J. Variational TFD pipelines (hybrid)** | **1. ($H_{\mathrm{TFD}}$)‑VQE with entanglement forging (width‑reduction ($2N \rightarrow N$))** <br> **2. TFD‑QITE at moderate depth (β‑schedules; locality‑aware updates)** <br> **3. Small‑lattice finite‑T correlators & spectral densities from TFD** |
 
 ---
 
@@ -316,7 +316,7 @@ These algorithms deliver asymptotic speed‑ups or polynomial‑time reductions 
 | **O. Quantum uncertainty quantification for large‑scale PDEs** | 1. Propagation of input‑parameter distributions through quantum‑accelerated forward models (QAE + QSVT) |
 | **P. Quantum‑accelerated scattering with many‑body final states** | 1. Dirac time‑dependent scattering with multi‑particle production (requires fault‑tolerant many‑body state preparation) |
 | **Q. Quantum‑enhanced Linear‑Landau‑Lifshitz‑Gilbert (LLG) mapping** | 1. Extraction of microscopic LLG coefficients from entanglement‑aware quantum simulations (requires full open‑system simulation + phase estimation) |
-| **R. Finite‑temperature & purified‑Gibbs/TFD preparation (fault‑tolerant)** | **1. QSVT/ block‑encoding routes to purified Gibbs/TFD** \(\exp(-\beta H/2)\) via polynomial transforms <br> **2. Coherent Gibbs samplers** (detailed‑balance Lindbladians mapped to a parent Hamiltonian with purified‑Gibbs zero‑mode; adiabatic path in \(\beta\)) <br> **3. Large‑scale finite‑T response & OTOCs on TFD/Schwinger–Keldysh contours (QPE‑grade)** |
+| **R. Finite‑temperature & purified‑Gibbs/TFD preparation (fault‑tolerant)** | **1. QSVT/ block‑encoding routes to purified Gibbs/TFD** ($\exp(-\beta H/2)$) via polynomial transforms <br> **2. Coherent Gibbs samplers** (detailed‑balance Lindbladians mapped to a parent Hamiltonian with purified‑Gibbs zero‑mode; adiabatic path in ($\beta$)) <br> **3. Large‑scale finite‑T response & OTOCs on TFD/Schwinger–Keldysh contours (QPE‑grade)** |
 
 
 ---  
