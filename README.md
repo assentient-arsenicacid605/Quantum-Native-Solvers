@@ -326,16 +326,17 @@ These algorithms deliver asymptotic speed‑ups or polynomial‑time reductions 
 ```
 Heterogeneous Quantum Computer (Architected for Fault-Tolerant Compatibility)
 ├─ Main QPU: Neutral-Atom (Rydberg/ tweezer)
-│   ├─ Fast parallel CZ gates (~99.5%); long coherence (≈12.6 s, hyperfine)
+│   ├─ Fast parallel CZ gates (~99.5%); long coherence (≈12.6 sec, hyperfine)
 │   ├─ Reconfigurable layouts; mid-circuit measurement & erasure
 │   └─ On-chip nanophotonics for coupling/ imaging
 ├─ Co-Processor: Quantum Photonic IC (QPIC)
 │   ├─ Time-bin/ cluster-state generation; fusion operations
-│   ├─ Waveguide arrays, thin-film LiNbO₃ modulators, PNR detectors
+│   ├─ Waveguide arrays, thin-film LiNbO₃ modulators, Photon Number Resolving (PNR) detectors
 │   └─ Fiber network to other racks/ fridges
-├─ Translator(s): μw ↔ optical
+├─ Translator(s) & quantum transducers: μw ↔ optical
 │   ├─ Electro-optic (LiNbO₃), opto-mechanical, Rydberg ensembles
-│   ├─ Targets: internal η ≥ 0.1-0.5, added noise ≲ 1 photon
+│   ├─ Superconducting metamaterial waveguides (engineered μw buses/ slow-light or TWPA media for transduction nodes & paramps)
+│   ├─ Targets: internal η ≥ 0.1–0.5, added noise ≲ 1 photon
 │   └─ With JPA/ JTWPA pre-amps (paramps), pump-noise filtering
 ├─ Quantum Memory: Superconducting Cat (bosonic)
 │   ├─ Passive bit-flip suppression (noise bias)
@@ -349,7 +350,7 @@ Heterogeneous Quantum Computer (Architected for Fault-Tolerant Compatibility)
 │       ├─ Frequency agility via electrostatic gating (semiconductor JJ)
 │       └─ Syndrome extraction, parity checks, and cavity SNAP orchestration
 └─ Classical Control & RAM
-    ├─ Cryo-CMOS SRAM/ FBRAM/ MRAM/ GC-eDRAM near 4-12 K; microcode/ waveform cache
+    ├─ Cryo-CMOS SRAM/ FBRAM/ GC-eDRAM near 4–12 K; microcode/ waveform cache
     ├─ Single-Flux-Quantum Digital (4 K stage; higher-integration families)
     │   ├─ RSFQ (DC-biased; ultrafast legacy baseline; static-power overhead); reference-grade timing/ waveform source or local clocks
     │   ├─ eSFQ/ ERSFQ (DC-biased, zero static power; preferred for scalable SFQ logic & SFQ-DACs/ JAWS)
